@@ -1,0 +1,22 @@
+The problem with previous loss function was  that every misclassified point has been given the same value.
+So,we need to consider the magnitude of the error as well.We need to calculate the distance of the misclassified point as well.The total error will be the absolute sum of
+the error.
+Rather than calculating the distance,we put the coordinate in the equation of the line and find the value.
+In the loss function of perceptron,this technique is used.This is proportional to the distance calculation method.This is proportional to the dot product.
+sklearn has implemented the actual loss function.
+
+Loss function formula:-
+
+L(w1,w2,b)=(1/n)(E(i=1 to i=n)L(y(i),f(xi)))+(alpha)*R(w1,w2)
+The last term of the loss function is the regularization term.
+
+In this loss function,
+L(y(i),f(xi))=max(0,-y(i)f(xi))
+where f(xi)=w1x1+w2x2+b
+
+n=number of rows in data
+
+This loss function depends on w1,w2 and b.
+y(i),x(i) are constants
+We need to find w1,w2 and b so that the value of the loss function is minimum.
+We use gradient descent to do this.
