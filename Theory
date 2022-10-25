@@ -1,0 +1,16 @@
+Problems in perceptron trick:-
+1)The line obtained from perceptron trick,we cant be perfectly sure that these are the values of w1,w2 and w3.The basic logic of perceptron trick states that if the point
+is misclassified,then move the line else not,so we can get more than 1 lines for a problem statement.so,we cant quantify our result.so,its imp. toquantify the soln. by 
+using the loss function.
+
+LOSS FUNCTION of Perceptron
+=>1)Number of misclassified points.-This has a problem that it is giving same value to every misclassified point.
+  2)Calculate the euclidian distance of misclassified points.
+  3)What actually is used in the loss function of perceptron is that we put the coordinate points in the eqn of line and find the absolute value,that absolute value is 
+    the amount/quantity of loss.
+  L(w1,w2,b)=(1/n)*E(i=1 to i=n)L(y(i),f(xi))+(alpha)*R(w1,w2)
+  L(y(i),f(xi))=max(0,-y(i)f(xi))  where,f(xi)=w1x1+w2x2+b
+  n=number of rows in the data.
+  4)Loss function is a method to tell how well is the machine learning algorithm working on my model.
+  
+
