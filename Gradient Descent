@@ -1,0 +1,11 @@
+L is a function of 3 things:-L(w1,w2,b)
+Lets consider w1,w2 to be constant,then L(w1)
+We need to find that value of w1 for which L is minimum.
+
+for i in epochs
+   take random values of w1,w2,b
+   w1=w1-(n)*(dL/dW1)=>partial derivatives in all the three
+   w2=w2-(n)*(dL/dW2)
+   b=b-(n)*(dL/db)
+   
+   
