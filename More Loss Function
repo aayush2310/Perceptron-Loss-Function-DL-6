@@ -1,0 +1,14 @@
+Perceptron is very flexible by design.
+We can replace the step function by the sigmoid function.
+Loss function=>binary cross entropy
+L=-y(i)log(y(i)')+(1-y(i))log(1-y(i)')
+If i apply this loss function in conjugation with the sigmoid function,then i will get the probabilities,as in Logistic regression.
+Perceptron is equal to logistic regression only when our activation function is sigmoid and the loss function is binary cross entropy.
+
+If i am dealing with multi class classification problem then,i can use activation function as softmax and the loss function as categorical cross entropy.
+L=E(i=1 to m)(y(i)log(y(i)'))
+This is softmax regression
+
+Perceptron as regression:-Use linear function as your activsation function that is input=output.
+And the loss function is the mean squared error.
+
